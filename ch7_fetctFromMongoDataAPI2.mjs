@@ -1,10 +1,10 @@
 
-const api_endpoint = "https://us-east-1.aws.data.mongodb-api.com/app/data-quwlt/endpoint/data/v1/action/findOne";
+const api_endpoint = "https://us-west-2.aws.data.mongodb-api.com/app/data-mjbct/endpoint/data/v1/action/findOne";
 
 const myBody = {
     "collection": "listingsAndReviews",
     "database": "sample_airbnb",
-    "dataSource": "Cluster0",
+    "dataSource": "it122-cluster",
     "filter": {
         "property_type": "Apartment"
     },
@@ -21,7 +21,7 @@ const response = await fetch(api_endpoint, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'api-key': 'vOGi0Uetg7bgYMMuWLXP5yE95nhvplA8g36k3MoVoyHLh9O1B5LyeB7BCzQaDtvw',
+        'api-key': 'ttkajIfeYN7PeFLYoNizQpcifJF01svr4MCz8HK3tO1qdwLgDbxCfrlO7aC5sz7F',
     },
     body: JSON.stringify(myBody)
 });
